@@ -2,9 +2,12 @@ package pattern23_BridgePattern;
 
 public class Client {
 	public static void main(String[] args) {
-		Color color = new Blue();
-		Pen pen = new SmallPen();
+		Color color;
+		Pen pen;
+		color = (Color)XMLUtilPen.getBean("color");
+		pen = (Pen)XMLUtilPen.getBean("pen");
+		
 		pen.setColor(color);
-		pen.draw("ÏÊ»¨");
+		pen.draw("é²œèŠ±");
 	}
 }
